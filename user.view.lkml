@@ -8,7 +8,7 @@ view: user_schema {
 }
 
 # Customize: Override dimensions or measures here
-view: user {
+view: user_config {
   extends: [user_core]
 
 # TODO: Identify which Users are Sales reps using this dimension.

@@ -8,7 +8,7 @@ view: task_schema {
 }
 
 # Customize: Override dimensions or measures here
-view: task {
+view: task_config {
   extends: [task_core]
 
   # Customize: Set your Salesforce domain (i.e. https:// _____________ .com )

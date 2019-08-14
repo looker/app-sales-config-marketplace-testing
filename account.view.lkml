@@ -9,7 +9,7 @@ view: account_schema {
 }
 
 # Customize: Override dimensions or measures here
-view: account {
+view: account_config {
   extends: [account_core]
 
   # Customize: Set your Salesforce domain (i.e. https:// _____________ .com )
@@ -44,7 +44,7 @@ view: account {
     }
   }
  }
- 
- view: account_facts_is_customer {
+
+ view: account_facts_is_customer_config {
   extends: [account_facts_is_customer_core]
 }

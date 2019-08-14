@@ -7,6 +7,6 @@ view: campaign_schema {
 }
 
 # Customize: Override dimensions or measures here
-view: campaign {
+view: campaign_config {
   extends: [campaign_core]
 }

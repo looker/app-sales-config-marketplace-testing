@@ -9,7 +9,7 @@ view: lead_schema {
 }
 
 # Customize: Override dimensions or measures here
-view: lead {
+view: lead_config {
   extends: [lead_core]
 
   # Customize: Set your Salesforce domain (i.e. https:// _____________ .com )

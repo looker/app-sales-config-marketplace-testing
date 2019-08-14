@@ -7,6 +7,6 @@ view: opportunity_history_schema {
 }
 
 # Customize: Override dimensions or measures here
-view: opportunity_history {
+view: opportunity_history_config {
   extends: [opportunity_history_core]
 }

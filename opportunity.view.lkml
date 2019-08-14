@@ -10,8 +10,8 @@ view: opportunity_schema {
 ##########################################
 ## Override dimensions or measures here ##
 ##########################################
-view: opportunity {
- extends: [opportunity_core, stage_customization]
+view: opportunity_config {
+ extends: [opportunity_core, stage_customization_config]
 
   # Customize: Set your Salesforce domain (i.e. https:// _____________ .com ) This will be used to link out to SFDC objects.
     dimension: salesforce_domain_config {
@@ -19,9 +19,9 @@ view: opportunity {
     hidden: yes
     }
 
-  #TODO: This should refer to the column on the opportunity record that represents  the value of the opportunity. 
+  #TODO: This should refer to the column on the opportunity record that represents  the value of the opportunity.
   # This can be ACV, Amount, revenue etc
-  # Its possible to use other tables to configure this field, including Opportunity Line Item. Reach out to a Looker Analyst for this workaround. 
+  # Its possible to use other tables to configure this field, including Opportunity Line Item. Reach out to a Looker Analyst for this workaround.
     dimension: amount_config {
     sql: amount ;;
     }
@@ -47,12 +47,12 @@ view: opportunity {
     group_label: "Status"
     }
 
-  #TODO: This field determines which opportunities should be included in the app. 
-  #      This is the filter that defines 'Total Amount' and should include all Opportunities 
-  #      you'd want to see aggregated at the top level. This would include New Business, Renewals, 
+  #TODO: This field determines which opportunities should be included in the app.
+  #      This is the filter that defines 'Total Amount' and should include all Opportunities
+  #      you'd want to see aggregated at the top level. This would include New Business, Renewals,
   #      Upsells and any other Opportunities that would be counted towards your Aggregate Quota.
 
-  #      Usually this would be based on the opportunity type field: 
+  #      Usually this would be based on the opportunity type field:
   #      e.g. ${type} IN ('New Business','New Customer','Marketplace','Amendment','Resell','Addon/Upsell') ;;
 
     dimension: is_included_in_quota {
@@ -120,7 +120,7 @@ view: opportunity {
 # TODO: Define your stage names below (make sure that no spaces lie between the last char of your stage names and
 #       the double semi-colon in the sql parameters)
 
-view: stage_customization {
+view: stage_customization_config {
 
   dimension: stage_1 {
     type: string

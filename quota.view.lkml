@@ -10,7 +10,7 @@ include: "//app-sales/quota_core.view.lkml"
 
 
 
-view: quota {
+view: quota_config {
   extends: [quota_core]
   derived_table: {
     sql:
@@ -92,7 +92,7 @@ view: quota {
 ### statements, each corresponding to the current or a previous quarter).                                                ###
 ############################################################################################################################
 
-view: aggregate_quota {
+view: aggregate_quota_config {
   extends: [aggregate_quota_core]
   derived_table: {
     sql:
@@ -114,6 +114,6 @@ view: aggregate_quota {
   }
 }
 
-view: manager_quota {
+view: manager_quota_config {
   extends: [manager_quota_core]
 }

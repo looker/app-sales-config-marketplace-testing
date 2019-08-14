@@ -7,7 +7,7 @@ view: contact_schema {
 }
 
 # Customize: Override dimensions or measures here
-view: contact {
+view: contact_config {
   extends: [contact_core]
 
   # Customize: Set your Salesforce domain (i.e. https:// _____________ .com )
