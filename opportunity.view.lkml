@@ -1,5 +1,4 @@
-# include: "//app-sales/opportunity_core.view.lkml"
-# include: "//app-sales-adapter/opportunity_adapter.view.lkml"
+
 
 # Customize: Change the schema or table name.
 view: opportunity_schema {
@@ -121,7 +120,7 @@ view: opportunity_config {
 # TODO: Define your stage names below (make sure that no spaces lie between the last char of your stage names and
 #       the double semi-colon in the sql parameters)
 
-view: stage_customization_config {
+view: stage_customization {
 
   dimension: stage_1 {
     type: string

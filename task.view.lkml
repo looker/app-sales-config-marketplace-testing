@@ -1,5 +1,3 @@
-# include: "//app-sales/task_core.view.lkml"
-# include: "//app-sales-adapter/task_adapter.view.lkml"
 
 # TODO: Change the schema or table name.
 view: task_schema {

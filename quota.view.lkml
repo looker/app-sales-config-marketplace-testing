@@ -1,5 +1,3 @@
-# include: "//app-sales/quota_core.view.lkml"
-
 
 ############################################################################################################################
 ### TODO: Set up the Quotas view.  There are many ways to set up the quota view. The important thing is that Looker      ###

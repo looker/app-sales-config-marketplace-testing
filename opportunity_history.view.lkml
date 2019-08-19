@@ -1,4 +1,3 @@
-# include: "//app-sales/opportunity_history_core.view.lkml"
 
 # Customize: Change the schema or table name.
 view: opportunity_history_schema {

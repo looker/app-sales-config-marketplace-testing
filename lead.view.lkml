@@ -1,5 +1,3 @@
-# include: "//app-sales/lead_core.view.lkml"
-# include: "//app-sales-adapter/lead_adapter.view.lkml"
 
 # Customize: Change the schema or table name.
 view: lead_schema {

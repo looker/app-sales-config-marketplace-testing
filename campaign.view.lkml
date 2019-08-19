@@ -1,4 +1,3 @@
-# include: "//app-sales/campaign_core.view.lkml"
 
 # Customize: Change the schema or table name.
 view: campaign_schema {

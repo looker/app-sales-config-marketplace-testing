@@ -1,4 +1,3 @@
-# include: "//app-sales/contact_core.view.lkml"
 
 # Customize: Change the schema or table name.
 view: contact_schema {

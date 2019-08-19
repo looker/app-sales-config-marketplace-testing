@@ -1,5 +1,3 @@
-# include: "//app-sales/user_core.view.lkml"
-# include: "//app-sales-adapter/user_adapter.view.lkml"
 
 # Customize: Change the schema or table name.
 view: user_schema {
