@@ -1,4 +1,3 @@
-
 # TODO: Change the schema or table name.
 view: task_schema {
   sql_table_name: salesforce.task ;;

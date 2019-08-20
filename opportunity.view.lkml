@@ -1,5 +1,3 @@
-
-
 # Customize: Change the schema or table name.
 view: opportunity_schema {
   sql_table_name: salesforce.opportunity ;;

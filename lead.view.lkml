@@ -1,4 +1,3 @@
-
 # Customize: Change the schema or table name.
 view: lead_schema {
   sql_table_name: salesforce.lead ;;

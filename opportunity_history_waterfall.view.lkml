@@ -1,4 +1,3 @@
-
 # Customize: Override dimensions or measures here
 view: opportunity_history_waterfall_config {
   extends: [opportunity_history_waterfall_core]
