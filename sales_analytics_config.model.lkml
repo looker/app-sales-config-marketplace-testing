@@ -1,12 +1,3 @@
-connection: "app-salesforce"
-
-include: "*.view"
-# include: "//app-sales-adapter/*.view"
-# include: "//app-sales/*.view"
-# include: "//app-sales/*.explore"
-# include: "//app-sales/*.dashboard"
-
-
   # datagroup for caching policy and persistent derived tables (PDTs) #
   # check if any of the Salesforce tables surfaced in Looker have been updated and synced recently
 datagroup: sales_analytics_etl {
@@ -35,32 +26,38 @@ named_value_format: custom_amount_value_format {
 ### This is useful for adding joins to additional custom derived tables and customizing which fields appear in the Explores.
 ### There are a few examples here: https://github.com/looker/app-sales-config-templates/blob/master/sales_analytics_explore_extends
 
-explore: opportunity {
+explore: opportunity_config {
   extends: [opportunity_core]
   extension: required
   fields: [EXTENDED*]
 }
 
-explore: account {
+explore: account_config {
   extends: [account_core]
   extension: required
   fields: [EXTENDED*]
 }
 
-explore: opportunity_history_waterfall {
+explore: opportunity_history_waterfall_config {
   extends: [opportunity_history_waterfall_core]
   extension: required
   fields: [EXTENDED*]
 }
 
-explore: lead {
+explore: lead_config {
   extends: [lead_core]
   extension: required
   fields: [EXTENDED*]
 }
 
-explore: contact {
+explore: contact_config {
   extends: [contact_core]
+  extension: required
+  fields: [EXTENDED*]
+}
+
+explore: historical_snapshot_config {
+  extends: [historical_snapshot_core]
   extension: required
   fields: [EXTENDED*]
 }
