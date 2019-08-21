@@ -117,4 +117,5 @@ view: aggregate_quota_config {
 view: manager_quota_config {
   extends: [manager_quota_core]
   extension: required
+
 }

@@ -9,4 +9,5 @@ view: campaign_schema {
 view: campaign_config {
   extends: [campaign_core]
   extension: required
+
 }

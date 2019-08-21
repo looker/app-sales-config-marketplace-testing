@@ -1,4 +1,3 @@
-
 # Customize: Change the schema or table name.
 view: contact_schema {
   sql_table_name: salesforce.contact ;;
