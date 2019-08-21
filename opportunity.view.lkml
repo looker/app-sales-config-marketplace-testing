@@ -1,5 +1,4 @@
 
-
 # Customize: Change the schema or table name.
 view: opportunity_schema {
   sql_table_name: salesforce.opportunity ;;
@@ -120,9 +119,11 @@ view: opportunity_config {
 # TODO: Define your stage names below (make sure that no spaces lie between the last char of your stage names and
 #       the double semi-colon in the sql parameters)
 
+
 view: stage_customization_config {
 extends: [stage_customization_core]
 extension: required
+
 
   dimension: stage_1 {
     type: string

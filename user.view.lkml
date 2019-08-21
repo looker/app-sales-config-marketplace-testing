@@ -1,5 +1,4 @@
 
-
 # Customize: Change the schema or table name.
 view: user_schema {
   sql_table_name: salesforce.user ;;

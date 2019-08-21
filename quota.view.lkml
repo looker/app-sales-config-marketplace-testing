@@ -1,4 +1,5 @@
 
+
 ############################################################################################################################
 ### TODO: Set up the Quotas view.  There are many ways to set up the quota view. The important thing is that Looker      ###
 ###       can find a view called quota that has a row for every Sales Rep for each quarter, going back 4 quarters.       ###
@@ -117,5 +118,4 @@ view: aggregate_quota_config {
 view: manager_quota_config {
   extends: [manager_quota_core]
   extension: required
-
 }
