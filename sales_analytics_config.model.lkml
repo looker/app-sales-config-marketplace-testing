@@ -1,12 +1,3 @@
-# connection: "app-salesforce"
-
-include: "*.view"
-# include: "//app-sales-adapter/*.view"
-# include: "//app-sales/*.view"
-# include: "//app-sales/*.explore"
-# include: "//app-sales/*.dashboard"
-
-
   # datagroup for caching policy and persistent derived tables (PDTs) #
   # check if any of the Salesforce tables surfaced in Looker have been updated and synced recently
 datagroup: sales_analytics_etl {
