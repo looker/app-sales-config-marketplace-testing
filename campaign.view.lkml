@@ -1,7 +1,7 @@
 
 # Customize: Change the schema or table name.
 view: campaign_schema {
-  sql_table_name: salesforce.campaign ;;
+  sql_table_name: @{SCHEMA_NAME}.campaign ;;
   extension: required
 }
 

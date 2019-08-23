@@ -1,7 +1,7 @@
 
 # Customize: Change the schema or table name.
 view: opportunity_history_schema {
-  sql_table_name: salesforce.opportunity_history ;;
+  sql_table_name: @{SCHEMA_NAME}.opportunity_history ;;
   extension: required
 }
 

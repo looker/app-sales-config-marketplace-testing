@@ -1,7 +1,7 @@
 
 # Customize: Change the schema or table name.
 view: account_schema {
-  sql_table_name: salesforce.account ;;
+  sql_table_name: @{SCHEMA_NAME}.account ;;
   extension: required
 }
 
