@@ -25,23 +25,26 @@ view: account_config {
   # or any other segmentation you'd want to break down accounts by.
   dimension: business_segment {
     type: string
-    case: {
-      when: {
-        sql: ${number_of_employees} <= 500 ;;
-        label: "Small Business"
-      }
-      when: {
-        sql: ${number_of_employees} >= 10000 ;;
-        label: "Enterprise"
-      }
-      when: {
-        sql: ${number_of_employees} >500 AND ${number_of_employees} <10000  ;;
-        label: "Mid-Market"
-      }
-      else: "Unknown"
-    }
-  }
+#     case: {
+#       when: {
+#         sql: ${number_of_employees} <= 500 ;;
+#         label: "Small Business"
+#       }
+#       when: {
+#         sql: ${number_of_employees} >= 10000 ;;
+#         label: "Enterprise"
+#       }
+#       when: {
+#         sql: ${number_of_employees} >500 AND ${number_of_employees} <10000  ;;
+#         label: "Mid-Market"
+#       }
+#       else: "Unknown"
+#   }
+#
+
+    sql: "Medium" ;;
  }
+}
 
  view: account_facts_is_customer_config {
   extends: [account_facts_is_customer_core]
